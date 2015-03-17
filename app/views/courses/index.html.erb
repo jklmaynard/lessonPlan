@@ -1,18 +1,23 @@
-<h1>Table of Contents</h1>
-
-<ul>
-  <% @courses.each do |course| %>
-    <div class="row">
-      <div class="span6">
-        <div class="well">
-          <%= course.name %>
-          <% course.lessons.each do |lesson| %>
-            <ul>
-              <li><%= lesson.name %></li>
-            </ul>
-          <% end %>
+<div class="container">
+  <h1>Table of Contents</h1>
+  <label>Search for:</label>
+  <input id="search" type="text">
+  <input class="btn btn-primary" value="Search">
+  <br>
+  <ul>
+    <% @courses.each do |course| %>
+      <div class="row">
+        <div class="span12">
+          <div class="well">
+            <h3><%= course.name %></h3>
+            <% course.lessons.each do |lesson| %>
+              <ul>
+                <li><%= link_to lesson.name, course_lesson_path(course, lesson) %></li>
+              </ul>
+            <% end %>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>
