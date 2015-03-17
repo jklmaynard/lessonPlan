@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 
+
 group :development do
   gem 'byebug'
   gem 'web-console'
@@ -23,4 +24,7 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'pry'
+  gem 'launchy'
 end
