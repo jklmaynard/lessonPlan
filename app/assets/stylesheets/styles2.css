@@ -2,3 +2,7 @@ li {
   color: red;
   list-style-type: disc;
 }
+
+.bottomli {
+  list-style-type: none;
+}

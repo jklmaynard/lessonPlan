@@ -1,3 +1,13 @@
 <div class="container">
   <h3><%= @lesson.text %></h3>
 </div>
+<div class="navbar navbar-fixed-bottom">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li class="bottomli"><%= link_to "Previous Lesson", course_lesson_path(@course.id, @lesson.id-1) %></li>
+        <li class="bottomli"><%= link_to "Next Lesson", course_lesson_path(@course.id, @lesson.id+1) %></li>
+      </ul>
+    </div>
+  </div>
+</div>
