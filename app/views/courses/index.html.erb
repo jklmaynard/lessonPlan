@@ -6,6 +6,11 @@
       <div class="span6">
         <div class="well">
           <%= course.name %>
+          <% course.lessons.each do |lesson| %>
+            <ul>
+              <li><%= lesson.name %></li>
+            </ul>
+          <% end %>
         </div>
       </div>
     </div>
