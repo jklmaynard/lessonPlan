@@ -1,0 +1,13 @@
+<h1>Table of Contents</h1>
+
+<ul>
+  <% @courses.each do |course| %>
+    <div class="row">
+      <div class="span6">
+        <div class="well">
+          <%= course.name %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</ul>
