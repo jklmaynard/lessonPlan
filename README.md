@@ -9,7 +9,7 @@ rails server
 ```
 localhost:3000
 
-[View site here]()
+[View site here](https://lesson-plan.herokuapp.com/)
 
 ### Bug Reports:
 No data currently
