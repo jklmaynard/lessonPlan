@@ -13,8 +13,7 @@ localhost:3000
 
 ### Bug Reports:
 No data currently
-None known
-```
+
 ### Authors:
 James Maynard 
 Alex Kaufman  
