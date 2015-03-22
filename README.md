@@ -15,7 +15,7 @@ localhost:3000
 No data currently
 
 ### Authors:
-James Maynard 
+James Maynard  
 Alex Kaufman  
 
 #### License
